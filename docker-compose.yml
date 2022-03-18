@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  firebase-local:
+    build:
+      context: .
+    ports:
+      - "4000:4000"
+      - "8080:8080"
+      - "9099:9099"
+    volumes:
+      - "${XDG_CONFIG_HOME}/.config:/root/.config"
+    command: "test-project"
