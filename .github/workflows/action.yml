@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     
     env:
-      IMAGE_NAME: go-tcp-proxy
+      IMAGE_NAME: firestore-local
     
     steps:
     - uses: actions/checkout@v2
