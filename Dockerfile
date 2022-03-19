@@ -17,4 +17,6 @@ EXPOSE 9099
 
 COPY firebase.json firebase.json
 
+RUN firebase setup:emulators:firestore
+
 ENTRYPOINT ["firebase", "emulators:start", "--project"]
